@@ -1,0 +1,6 @@
+framework module FSLog {
+  umbrella header "FSLog-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		24BA14C666EA4E3C78517928 /* Pods_FSLog_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSLog_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		38CD6FBD72CC565246870C78 /* FSLog.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FSLog.podspec; path = ../FSLog.podspec; sourceTree = "<group>"; };
-		3C831C77AC65A0D5520192F3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		38CD6FBD72CC565246870C78 /* FSLog.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FSLog.podspec; path = ../FSLog.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3C831C77AC65A0D5520192F3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		52E704B471999100B3985488 /* Pods-FSLog_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSLog_Example.debug.xcconfig"; path = "Target Support Files/Pods-FSLog_Example/Pods-FSLog_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		58A37743BC91D3DBCF97C015 /* Pods-FSLog_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSLog_Example.release.xcconfig"; path = "Target Support Files/Pods-FSLog_Example/Pods-FSLog_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* FSLog_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSLog_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +66,7 @@
 		75F5207349437493E0698F0D /* Pods_FSLog_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSLog_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3A1AFF6DAAA3D2923E93286 /* Pods-FSLog_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSLog_Tests.release.xcconfig"; path = "Target Support Files/Pods-FSLog_Tests/Pods-FSLog_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C33890815201B331B970A497 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C33890815201B331B970A497 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				74F7EC5E81D8C423C96E9534 /* Pods-FSLog_Tests.debug.xcconfig */,
 				B3A1AFF6DAAA3D2923E93286 /* Pods-FSLog_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = wanqijian;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = Q2T8K3RPZ5;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -351,12 +354,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FSLog_Example/Pods-FSLog_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/FSLog/FSLog.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSLog.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +528,7 @@
 			baseConfigurationReference = 52E704B471999100B3985488 /* Pods-FSLog_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q2T8K3RPZ5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FSLog/FSLog-Prefix.pch";
 				INFOPLIST_FILE = "FSLog/FSLog-Info.plist";
@@ -538,6 +544,7 @@
 			baseConfigurationReference = 58A37743BC91D3DBCF97C015 /* Pods-FSLog_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q2T8K3RPZ5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FSLog/FSLog-Prefix.pch";
 				INFOPLIST_FILE = "FSLog/FSLog-Info.plist";

@@ -1,0 +1,33 @@
+PODS:
+  - CocoaLumberjack (3.5.2):
+    - CocoaLumberjack/Core (= 3.5.2)
+  - CocoaLumberjack/Core (3.5.2)
+  - Expecta (1.0.6)
+  - FSLog (0.1.0):
+    - CocoaLumberjack (~> 3.5.2)
+  - Specta (1.0.7)
+
+DEPENDENCIES:
+  - Expecta
+  - FSLog (from `../`)
+  - Specta
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CocoaLumberjack
+    - Expecta
+    - Specta
+
+EXTERNAL SOURCES:
+  FSLog:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 118bf4a820efc641f79fa487b75ed928dccfae23
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  FSLog: b7b14ba24d94b8d2425dba47818985cb228b3dc8
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+
+PODFILE CHECKSUM: ed84e2658e2e76ac1f9cea998517a4f009b4001f
+
+COCOAPODS: 1.6.1
